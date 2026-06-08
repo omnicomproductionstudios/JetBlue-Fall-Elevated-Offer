@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="ad.size" content="width=160,height=600" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.13_min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "%%CLICK_URL_UNESC%%";
+    </script>
+  </head>
+
+  <body onload="init()">
+    <div id="main_container">
+      <!--start main_container-->
+      <div id="main_content" class="">
+        <img src="images/bg1.jpg" class="full-width" id="bg1" alt="" />
+        <img src="images/bg2.jpg" class="full-width" id="bg2" alt="" />
+        <div class="copyContainer">
+          <div class="copy" id="copy1">
+            The JetBlue<br>Premier<br>Card is<br>your key to<br><span>BlueHouse</span>.
+          </div>
+          <div class="copy hidden" id="copy2">
+            Unlock<br>complimentary<br>access<br>for <span>you and<br>+1 guest</span>.<sup>*</sup>
+          </div>
+          <div class="copy hidden" id="copy3">
+            Now<br>open at<br><span>JFK<br>Terminal 5</span>.
+          </div>
+        </div>
+
+        <div class="term" id="term1">Terms Apply</div>
+        <div class="term hidden" id="term2">*Lounge access not included with Blue Basic Bookings. Terms apply.</div>
+
+        <div class="last-frame" id="lastFrame"></div>
+
+        <div class="copy hidden" id="copy4">
+            Reach a<br>new altitude<br>with the<br><span>JetBlue<br>Premier<br>Card</span>.
+        </div>
+        <div id="cta" class="hidden">Learn More</div>
+
+        <img src="images/card.png" class="full-width hidden" id="card" alt="" />
+        <img src="images/logo.png" class="full-width" id="logo" alt="" />
+        <div class="term hidden" id="term3">Terms Apply</div>
+
+        <div id="shine"></div>
+      </div>
+
+      <div id="default_exit" class="btn"></div>
+      <!--end main_container-->
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript">
+      document
+        .getElementById("default_exit")
+        .addEventListener("click", function () {
+          window.open(clickTag, "_blank");
+        });
+    </script>
+  </body>
+</html>
