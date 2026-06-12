@@ -14,43 +14,7 @@ function init() {
 function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
   tl.set(["#copy1", "#copy2", "#copy3", "#cta"], { y: 20, autoAlpha: 0 });
-
-  tl.set(palm, {
-  transformOrigin: "80% 100%",
-  force3D: true
-});
-
-// Existing sway
-tl2.to(palm, {
-  duration: 2.8,
-  rotation: 0.5,
-  skewX: 1,
-  scaleX: 1.01,
-  x: 1.5,
-  ease: "sine.inOut",
-  yoyo: true,
-  repeat: -1
-}, 0);
-
-tl2.to(palm, {
-  duration: 1.6,
-  rotation: -0.3,
-  skewX: -0.6,
-  ease: "sine.inOut",
-  yoyo: true,
-  repeat: -1
-}, 0.4);
-
-// Add subtle up/down drift
-tl2.to(palm, {
-  duration: 4,
-  y: -2,
-  ease: "sine.inOut",
-  yoyo: true,
-  repeat: -1
-}, 0);
-
-  // tl2.to(palm, 1, { rotation:0.5, y:-1, yoyo:true, repeat:-1, y:0, ease: "none",}, 0)
+  tl2.to(palm, 1, { rotation:0.5, y:-1, yoyo:true, repeat:-1, y:0, ease: "none",}, 0)
   tl.addLabel("frame1", 0)
     .to(copy1, 0.5, { autoAlpha: 1, y:0, ease: "power1.inOut" }, "frame1")
     .to(copy1, 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame1+=3.5")
