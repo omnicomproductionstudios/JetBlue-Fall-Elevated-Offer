@@ -76,93 +76,123 @@ video {
 }
 
 
-.full-width{
+.full-width {
   width: 160px;
   height: 600px;
 }
-.copyContainer{
+
+.copyContainer {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-.copy{
+
+.copy {
   font-family: "ESKlarheitGrotesk Xbd";
   width: 100%;
-  color: #fff;
+  color: #0000AA;
   will-change: transform;
   position: absolute;
-}
-.copy span{
-  color: #00e1ff;
-}
-#copy1, #copy2, #copy3, #copy4{
-  left: 0;
-  top: 39px;
-  font-size: 22.10px;
-  letter-spacing: -1px;
-  line-height: 25px;
-  text-align: center;
-}
-#copy2 sup{
-  line-height: 0px;
-  font-size: 10px;
-}
-#copy4{
-  top: 39px;
-}
-
-.term{
-  font-family: "ESKlarheitGrotesk Smbd";
-  color: #fff;
   width: 100%;
-  font-size: 4.6px;
-  top: 583px;
-  left: 0;
+  height: 100%;
+  inset: 0;
+}
+
+#copy1,
+#copy2 {
+
+  letter-spacing: -2%;
+  text-align: center;
+
+}
+
+#copy1 .line1 {
+  font-size: 20px;
+  top: 53px;
+  width: 100%;
+}
+
+#copy2 .line1 {
+  font-size: 20px;
+  top: 53px;
+  width: 100%;
+
+}
+
+#copy1 .line2,
+#copy2 .line2 {
+  font-size: 36px;
+  top: 73px;
+  width: 100%;
+
+}
+
+#copy1 .line3,
+#copy2 .line3 {
+  font-size: 20px;
+  top: 112px;
+  width: 100%;
+
+
+}
+
+#copy3 {
+  font-size: 20px;
+  letter-spacing: -0.30px;
+  line-height: 20px;
+  top: 56px;
+  width: 100%;
   text-align: center;
 }
-#term2{
-  font-size: 4.5px;
-}
-#term3{
-  top: 416px;
-  left: 123px;
-  font-size: 5.15px;
-  text-align: left;
-}
-#cta{
+
+.term {
   font-family: "ESKlarheitGrotesk Smbd";
-  background-color: #00e1ff;
-  display: inline-block;
-  font-size: 13.1px;
-  top: 232.5px;
-  left: 27px;
-  width: 106.5px;
-  height: 35px;
-  color: #000064;
+  color: #0000AA;
+  font-size: 5px;
+  letter-spacing: -0.3px;
+  top: 359px;
+  left: 122px;
+}
+
+#bg {
+  width: 360px;
+  height: auto;
+  will-change: transform;
+  transform-origin: center center;
+}
+
+#card {
+  width: 138px;
+  height: 87.4px;
+  left: 11px;
+  top: 271px;
+}
+
+#cta {
+  font-family: "ESKlarheitGrotesk Smbd";
+  background-color: #00009B;
+  font-size: 12.576px;
+  line-height: 37px;
+  color: #fff;
+  border-radius: 4px;
+  width: 131px;
+  height: 34.584px;
+  top: 189.5px;
+  left: 14px;
   text-align: center;
-  line-height: 35px;
-  border-radius: 2.5px;
+  display: inline-block;
   will-change: transform;
-}
 
-#bg2{
-  transform: translateY(600px);
-  will-change: transform;
-  width: 160px;
-  height: 400px;
-  bottom: 0px;
 }
 
 
-
-.last-frame{
+.last-frame {
   width: 100%;
   height: 600px;
-  background-color: #000064;
+  background-color: #fff;
   transform: translateY(600px);
   will-change: transform;
 }
-
 
 /* Shine effect */
 #shine {

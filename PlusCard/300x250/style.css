@@ -76,12 +76,12 @@ video {
 }
 
 
-.full-width{
+.full-width {
   width: 300px;
   height: 250px;
 }
 
-.copy{
+.copy {
   font-family: "ESKlarheitGrotesk Xbd";
   width: 100%;
   color: #0000AA;
@@ -89,45 +89,54 @@ video {
   position: absolute;
   width: 100%;
   height: 100%;
-  inset:0;
+  inset: 0;
 }
-#copy1, #copy2{
-  left: 18px; 
+
+#copy1,
+#copy2 {
+  left: 18px;
   letter-spacing: -2%;
 }
-#copy1 .line1{
+
+#copy1 .line1 {
   font-size: 22.14px;
   top: 16px;
 }
-#copy1 .line2{
+
+#copy1 .line2 {
   font-size: 46.95px;
   top: 35px;
 }
-#copy1 .line3{
+
+#copy1 .line3 {
   font-size: 22px;
   top: 85px;
 }
 
 #copy2 .line1 {
-    font-size: 22.14px;
-    top: 18px;
+  font-size: 22.14px;
+  top: 18px;
 }
+
 #copy2 .line3 {
-    font-size: 22px;
-    top: 95px;
+  font-size: 22px;
+  top: 95px;
 }
+
 #copy2 .line2 {
-    font-size: 46.95px;
-    top: 40px;
+  font-size: 46.95px;
+  top: 40px;
 }
-#copy3{
-  font-size:22.14px;
+
+#copy3 {
+  font-size: 22.14px;
   letter-spacing: -2%;
   line-height: 22.1px;
   left: 22px;
-  top:21px
+  top: 21px
 }
-.term{
+
+.term {
   font-family: "ESKlarheitGrotesk Smbd";
   color: #0000AA;
   font-size: 4.39px;
@@ -135,28 +144,31 @@ video {
   top: 224px;
   left: 252px;
 }
-#bg{
+
+#bg {
   width: 360px;
   height: auto;
   will-change: transform;
   transform-origin: center center;
 }
-#card{
+
+#card {
   width: 135px;
   height: 85.14px;
   left: 143px;
   top: 137px;
 }
-#cta{
+
+#cta {
   font-family: "ESKlarheitGrotesk Smbd";
   background-color: #00009B;
   font-size: 10px;
-  line-height: 29px;
+  line-height: 30px;
   color: #fff;
   border-radius: 4px;
   width: 106px;
   height: 29px;
-  top: 136.5px;
+  top: 131.5px;
   left: 22px;
   text-align: center;
   display: inline-block;
@@ -164,7 +176,7 @@ video {
 }
 
 
-.last-frame{
+.last-frame {
   width: 100%;
   height: 250px;
   background-color: #fff;

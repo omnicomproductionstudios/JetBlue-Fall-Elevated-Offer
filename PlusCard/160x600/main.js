@@ -6,27 +6,24 @@ var startTime;
 function init() {
   startTime = new Date();
   tl = gsap.timeline({ onComplete: logDuration });
+  tl2 = gsap.timeline({});
   animate();
   setRollover();
 }
 
 function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
-  tl.set(["#copy2", "#copy3", "#copy4", "#cta"], { y: 20, autoAlpha: 0 });
-
+  tl.set(["#copy1", "#copy2", "#copy3", "#cta"], { y: 20, autoAlpha: 0 });
+  tl2.set(bg, { x: -50, force3D: true })
+  tl2.to(bg, 9, { x: 0, ease: "none", scale: 1.15 }, 0)
   tl.addLabel("frame1", 0)
-    .to(copy1, 1, { autoAlpha: 1, ease: "power1.inOut" }, "frame1")
-    .to([copy1, term1], 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame1+=3.5")
+    .to(copy1, 0.5, { autoAlpha: 1, y: 0, ease: "power1.inOut" }, "frame1")
+    .to(copy1, 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame1+=3.5")
     .addLabel("frame2", "frame1+=4")
-    .to(bg2, 0.6, { y: 0, autoAlpha:1, ease: Power2.easeOut }, "frame2")
-    .to(copy2, 1, { y: 0, autoAlpha: 1, ease: "power3.out" }, "frame2+=0.3")
-    .to(term2, 1, { autoAlpha: 1, ease: "power3.out" }, "frame2")
-    .to([copy2, term2], 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame2+=3.5")
-    .addLabel("frame3", "frame2+=4")
-    .to(copy3, 1, { y: 0, autoAlpha: 1, ease: "power3.out" }, "frame3")
-    .addLabel("frame4", "frame3+=4")
-    .to(lastFrame, 0.6, { y: 0, ease: Power2.easeOut }, "frame4")
-    .to([copy4, cta, card, term3], 0.5, { autoAlpha:1, y: 0, ease: Power2.easeOut }, "frame4+=0.5")
+    .to(copy2, 0.5, { y: 0, autoAlpha: 1, y: 0, ease: "power1.inOut" }, "frame2")
+    .to(lastFrame, 0.6, { y: 0, ease: Power2.easeOut }, "frame2+=3.5")
+    .to(copy3, 0.5, { autoAlpha: 1, y: 0, ease: "power1.inOut" }, ">")
+    .to(cta, 0.5, { autoAlpha: 1, y: 0, ease: "power1.inOut" }, ">-=0.05")
     .to(shine, 0.5, { backgroundPosition: '146px 0px' }, "frame4+=1");
 }
 
@@ -52,7 +49,8 @@ function logDuration() {
   let endTime = new Date();
   console.log(
     "Animation duration: " +
-      ((endTime - startTime) / 1000).toFixed(2) +
-      " seconds",
+    ((endTime - startTime) / 1000).toFixed(2) +
+    " seconds",
   );
 }
+

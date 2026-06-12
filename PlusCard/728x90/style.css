@@ -74,11 +74,13 @@ video {
   src: url("./fonts/ESKlarheitGrotesk-Xbd.woff");
   font-weight: normal;
 }
-.full-width{
+
+.full-width {
   width: 728px;
   height: 90px;
 }
-.copy{
+
+.copy {
   font-family: "ESKlarheitGrotesk Xbd";
   width: 100%;
   color: #0000AA;
@@ -86,78 +88,111 @@ video {
   position: absolute;
   width: 100%;
   height: 100%;
-  inset:0;
+  inset: 0;
 }
-#copy1, #copy2{
-  left: 24px; 
+
+#copy1,
+#copy2 {
+  left: 24px;
   letter-spacing: -2%;
 }
-#copy1 .line1, #copy2 .line1{
+
+#copy1 .line1 {
   font-size: 23.88px;
   top: 29px;
 }
-#copy1 .line2, #copy2 .line2{
+
+#copy1 .line2 {
   font-size: 47.75px;
   top: 14px;
   left: 63px;
   letter-spacing: 0;
 }
-#copy1 .line3, #copy2 .line3{
+
+
+#copy1 .line3 {
   font-size: 23.88px;
   top: 30px;
   left: 230px;
 }
-#copy3{
-  font-size: 33px;
-  letter-spacing: -2%;
-  line-height: 33px;
-  left: 23px;
-  top: 42px;
+
+
+#copy2 .line1 {
+  font-size: 23.88px;
+  top: 29px;
 }
-.term{
+
+#copy2 .line2 {
+  font-size: 47.75px;
+  top: 14px;
+  left: 173px;
+  letter-spacing: 0;
+}
+
+#copy2 .line3 {
+  font-size: 23.88px;
+  top: 30px;
+  left: 301px;
+}
+
+#copy3 {
+  font-size: 24px;
+  letter-spacing: -2%;
+  line-height: 25px;
+  left: 24px;
+  top: 20px;
+
+}
+
+.term {
   font-family: "ESKlarheitGrotesk Smbd";
   color: #0000AA;
-  font-size: 6.18px;
-  letter-spacing: -2%;
-  top: 446px;
-  left: 176px;
+  font-size: 3.5px;
+  letter-spacing: -2.1%;
+  top: 76px;
+  right: 113px;
 }
-#bg{
+
+#bg {
   width: 770px;
   height: auto;
   will-change: transform;
   transform-origin: center center;
 }
-#card{
+
+#card {
   width: 103px;
   height: 64.96px;
   left: 511px;
   top: 10px;
 }
-#cta{
+
+#cta {
   font-family: "ESKlarheitGrotesk Smbd";
   background-color: #00009B;
-  font-size: 13.8px;
-  line-height: 39px;
+  background-color: #00009B;
+  font-size: 12px;
+  line-height: 32px;
   color: #fff;
   border-radius: 4px;
-  width: 143px;
-  height: 37.5px;
-  top: 159.5px;
-  left: 23px;
+  width: 125px;
+  height: 33px;
+  top: 30px;
+  left: 305px;
   text-align: center;
   display: inline-block;
   will-change: transform;
 }
 
 
-.last-frame{
+.last-frame {
   width: 100%;
   height: 600px;
   background-color: #fff;
   transform: translateY(600px);
   will-change: transform;
 }
+
 /* Shine effect */
 #shine {
   top: 0px;
