@@ -147,10 +147,14 @@ video {
 
 }
 #bg{
-  width: 360px;
-  height: auto;
+  width: 300px;
+  height: 250px;
   will-change: transform;
   transform-origin: center center;
+}
+#palm{
+  width: 300px;
+  height: 250px;
 }
 #card{
   width: 135px;

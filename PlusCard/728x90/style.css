@@ -154,7 +154,7 @@ video {
 }
 
 #bg {
-  width: 770px;
+  width: 788px;
   height: auto;
   will-change: transform;
   transform-origin: center center;
@@ -200,7 +200,7 @@ video {
   width: 728px;
   height: 90px;
   background-image: url(./images/shine.png);
-  background-position: 160px 5px;
+  background-position: 320px 0px;
   background-repeat: no-repeat;
   position: absolute;
   mix-blend-mode: soft-light;
@@ -210,4 +210,5 @@ video {
   -webkit-mask-position: center;
   mask-image: url(./images/mask.png);
   z-index: 1;
+  mask-size: 728px;
 }
