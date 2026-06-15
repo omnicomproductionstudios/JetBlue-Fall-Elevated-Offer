@@ -155,7 +155,7 @@ video {
 #leaf{
   width: 300px;
   height: 250px;
-  top: 2px;
+  top: -1px;
       /* scale: 0.995; */
 }
 #card{
