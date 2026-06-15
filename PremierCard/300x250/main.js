@@ -14,7 +14,9 @@ function init() {
 function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
   tl.set(["#copy1", "#copy2", "#copy3", "#cta"], { y: 20, autoAlpha: 0 });
-  tl2.to(leaf, 1.1, { rotation:1.2,  yoyo:true, repeat:6,  ease: "sine.inOut"}, 0)
+  tl2.set(bg, {scale:1, force3D:true})
+  tl2.to("#shimmerShine", 3.5,{ backgroundPosition: "0px 220px", ease: "none", repeat: 3}, -1)
+  tl2.to(bg, 9, {scale:1.15, ease: "none"}, 0)
   tl.addLabel("frame1", 0)
     .to(copy1, 0.5, { autoAlpha: 1, y:0, ease: "power1.inOut" }, "frame1")
     .to(copy1, 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame1+=3.5")
