@@ -147,16 +147,10 @@ video {
 
 }
 #bg{
-  width: 300px;
-  height: 250px;
+  width: 360px;
+  height: auto;
   will-change: transform;
   transform-origin: center center;
-}
-#leaf{
-  width: 300px;
-  height: 250px;
-  top: 2px;
-      /* scale: 0.995; */
 }
 #card{
   width: 135px;
