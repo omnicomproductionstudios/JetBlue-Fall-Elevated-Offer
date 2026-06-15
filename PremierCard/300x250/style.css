@@ -152,9 +152,10 @@ video {
   will-change: transform;
   transform-origin: center center;
 }
-#palm{
+#leaf{
   width: 300px;
   height: 250px;
+  top: -2px;
 }
 #card{
   width: 135px;
