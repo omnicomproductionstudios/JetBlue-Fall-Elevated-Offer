@@ -152,12 +152,6 @@ video {
   will-change: transform;
   transform-origin: center center;
 }
-#leaf{
-  width: 300px;
-  height: 250px;
-  top: 2px;
-      /* scale: 0.995; */
-}
 #card{
   width: 135px;
   height: 85.14px;
@@ -204,9 +198,10 @@ video {
   mask-image: url(./images/mask.png);
   mask-size: 300px;
 }
+
 #shimmerShine {
   width: 300px;
-  height: 250px; 
+  height: 250px;
   background-image: url(./images/water-shine.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -225,7 +220,7 @@ video {
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
   mask-position: center;
-
+  
   top: 0;
   left: 0;
 }
