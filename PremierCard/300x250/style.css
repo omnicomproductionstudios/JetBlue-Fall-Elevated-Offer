@@ -86,7 +86,7 @@ video {
   pointer-events: none;
   will-change: opacity, filter, transform;
   /* scale: 1.1; */
-  /* opacity: .8; */
+  opacity: .7;
 }
 #bg{
   will-change: transform;
