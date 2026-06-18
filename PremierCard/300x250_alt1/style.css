@@ -82,7 +82,7 @@ video {
 }
 
 #flare{
-  /* mix-blend-mode: screen; */
+  mix-blend-mode: screen;
   pointer-events: none;
   will-change: opacity, filter, transform;
   scale: 1.1;
