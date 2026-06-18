@@ -103,10 +103,11 @@ video {
 }
 
 #copy1 .line2 {
-  font-size: 47.75px;
+  font-size: 48px;
   top: 14px;
   left: 63px;
-  letter-spacing: 0;
+  letter-spacing: -2%;
+  color: #fff;
 }
 
 
@@ -123,10 +124,11 @@ video {
 }
 
 #copy2 .line2 {
-  font-size: 47.75px;
+  font-size: 48px;
   top: 14px;
   left: 173px;
-  letter-spacing: 0;
+  letter-spacing: -2%;
+  color: #fff;
 }
 
 #copy2 .line3 {

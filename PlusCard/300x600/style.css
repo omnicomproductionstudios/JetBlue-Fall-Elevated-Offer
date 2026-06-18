@@ -104,13 +104,23 @@ video {
   font-size: 33px;
   top: 36px;
 }
-#copy1 .line2, #copy2 .line2{
+#copy1 .line2{
   font-size: 70px;
-  top: 69px;
+  top: 65px;
+  color: #fff;
 }
-#copy1 .line3, #copy2 .line3{
+#copy1 .line3{
   font-size: 33.7px;
-  top: 148px;
+  top: 141px;
+}
+#copy2 .line2 {
+    font-size: 70px;
+    top: 68px;
+    color: #fff;
+}
+#copy2 .line3 {
+    font-size: 33.7px;
+    top: 143px;
 }
 #copy3{
   font-size: 33px;

@@ -100,40 +100,42 @@ video {
 
 #copy1 .line1 {
   font-size: 22.14px;
-  top: 16px;
+  top: 14px;
 }
 
 #copy1 .line2 {
   font-size: 46.95px;
-  top: 35px;
+  top: 33px;
+  color: #fff;
 }
 
 #copy1 .line3 {
   font-size: 22px;
-  top: 85px;
+  top: 84px;
 }
 
 #copy2 .line1 {
   font-size: 22.14px;
-  top: 18px;
+  top: 16px;
 }
 
 #copy2 .line3 {
   font-size: 22px;
-  top: 95px;
+  top: 93px;
 }
 
 #copy2 .line2 {
   font-size: 46.95px;
-  top: 40px;
+  top: 38px;
+  color: #fff
 }
 
 #copy3 {
-  font-size: 22.14px;
+  font-size: 22px;
   letter-spacing: -2%;
-  line-height: 22.1px;
-  left: 22px;
-  top: 21px
+  line-height: 22px;
+  left: 18px;
+  top: 20px;
 }
 
 .term {
@@ -168,8 +170,8 @@ video {
   border-radius: 4px;
   width: 106px;
   height: 29px;
-  top: 137.5px;
-  left: 22px;
+  top: 139.5px;
+  left: 18px;
   text-align: center;
   display: inline-block;
   will-change: transform;
