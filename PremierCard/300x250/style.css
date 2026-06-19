@@ -85,12 +85,11 @@ video {
   /* mix-blend-mode: screen; */
   pointer-events: none;
   will-change: opacity, filter, transform;
-  /* scale: 1.1; */
-  opacity: .7;
+  transform-origin: center center;
 }
 #bg{
   will-change: transform;
-  transform-origin: center left;
+  transform-origin: center right;
 }
 
 
