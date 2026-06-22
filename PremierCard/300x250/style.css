@@ -90,6 +90,8 @@ video {
 #bg{
   will-change: transform;
   transform-origin: center right;
+  width: 340px;
+  height: auto;
 }
 
 
