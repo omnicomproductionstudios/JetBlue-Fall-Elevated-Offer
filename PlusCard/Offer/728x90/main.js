@@ -14,18 +14,16 @@ function init() {
 function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
   tl.set(["#copy1", "#copy2", "#copy3", "#cta"], { y: 20, autoAlpha: 0 });
-  tl2.set(bg, {x:-41, force3D:true})
-  tl2.set(flare, {force3D:true})
-  tl2.to(bg, 9, {x:0, ease: "none",}, 0)
-  tl2.to(flare, 4, { scale: 0.85,  yoyo:true, repeat:4,  ease: "sine.inOut"}, 0)
+  tl2.set(bg, { x: -50, force3D: true })
+  tl2.to(bg, 9, { x: 0, ease: "none", scale: 1.15 }, 0)
   tl.addLabel("frame1", 0)
-    .to(copy1, 0.5, { autoAlpha: 1, y:0, ease: "power1.inOut" }, "frame1")
+    .to(copy1, 0.5, { autoAlpha: 1, y: 0, ease: "power1.inOut" }, "frame1")
     .to(copy1, 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame1+=3.5")
     .addLabel("frame2", "frame1+=4")
-    .to(copy2, 0.5, { y: 0, autoAlpha: 1, y:0, ease: "power1.inOut"}, "frame2")
+    .to(copy2, 0.5, { y: 0, autoAlpha: 1, y: 0, ease: "power1.inOut" }, "frame2")
     .to(lastFrame, 0.6, { y: 0, ease: Power2.easeOut }, "frame2+=3.5")
-    .to([copy3, cta], 0.5, { autoAlpha: 1, y:0,  ease: "power1.inOut" }, ">")
-    .to(shine, 0.5, { backgroundPosition: "425px 0px" }, "frame4+=0.5");
+    .to([copy3, cta], 0.5, { autoAlpha: 1, y: 0, ease: "power1.inOut" }, ">")
+    .to(shine, 0.5, { backgroundPosition: '600px 0px' }, "frame2+=5");
 }
 
 function setRollover() {
@@ -50,7 +48,9 @@ function logDuration() {
   let endTime = new Date();
   console.log(
     "Animation duration: " +
-      ((endTime - startTime) / 1000).toFixed(2) +
-      " seconds",
+    ((endTime - startTime) / 1000).toFixed(2) +
+    " seconds",
   );
 }
+
+

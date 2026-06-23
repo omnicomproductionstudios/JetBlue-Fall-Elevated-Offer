@@ -22,8 +22,7 @@ function animate() {
     .addLabel("frame2", "frame1+=4")
     .to(copy2, 0.5, { y: 0, autoAlpha: 1, y: 0, ease: "power1.inOut" }, "frame2")
     .to(lastFrame, 0.6, { y: 0, ease: Power2.easeOut }, "frame2+=3.5")
-    .to(copy3, 0.5, { autoAlpha: 1, y: 0, ease: "power1.inOut" }, ">")
-    .to(cta, 0.5, { autoAlpha: 1, y: 0, ease: "power1.inOut" }, ">-=0.05")
+    .to([copy3, cta], 0.5, { autoAlpha: 1, y: 0, ease: "power1.inOut" }, ">")
     .to(shine, 0.5, { backgroundPosition: '136px -50px' }, "frame2+=5");
 }
 
