@@ -28,16 +28,16 @@ video {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 160px;
-  height: 600px;
+  width: 728px;
+  height: 90px;
 }
 
 #main_content {
   position: absolute;
   top: -1px;
   left: -1px;
-  width: 160px;
-  height: 600px;
+  width: 728px;
+  height: 90px;
 }
 
 .hidden {
@@ -48,8 +48,8 @@ video {
 #default_exit {
   top: -1px;
   left: -1px;
-  width: 160px;
-  height: 600px;
+  width: 728px;
+  height: 90px;
   z-index: 500;
   cursor: pointer;
 }
@@ -77,8 +77,8 @@ video {
 
 
 .full-width{
-  width: 160px;
-  height: 600px;
+  width: 728px;
+  height: 90px;
 }
 
 #flare{
@@ -86,13 +86,15 @@ video {
   pointer-events: none;
   will-change: opacity, filter, transform;
   transform-origin: center center;
+  width: 430px;
+  top: -104px;
+  left: 349px;
 }
 #bg{
-  /* will-change: transform;
-  transform-origin: center right; */
-  width: 190px;
+  will-change: transform;
+  transform-origin: center right;
+  width: 758px;
   height: auto;
-  /* top: -84px; */
 }
 
 
@@ -105,55 +107,58 @@ video {
   width: 100%;
   height: 100%;
   inset:0;
-  text-align: center;
 }
 #copy1, #copy2{
-  left: 0px;
+  left: 24px;
   letter-spacing: -2%;
 }
 #copy1 .line1{
-  font-size: 20px;
-  top: 61px;
+  font-size: 24px;
+  top: 30px;
   color: #fff;
-  width: 100%;
+  letter-spacing: 0;
 }
 #copy1 .line2{
-  font-size: 35px;
-  top: 82px;
-  width: 100%;
+  font-size: 48px;
+  top: 14px;
+  color: #fff;
+  left: 64px;
 }
 #copy1 .line3{
-  font-size: 20px;
-  top: 121px;
+  font-size: 24px;
+  top: 30px;
+  left: 223px;
   color: #fff;
-  width: 100%;
+  letter-spacing: 0;
 }
 #copy2{
-  left: 0px;
+  left: 26px;
 }
 #copy2 .line1 {
-  font-size: 20px;
-  top: 61px;
+  font-size: 24px;
+  top: 30px;
   color: #fff;
-  left: 13px;
+  letter-spacing: 0;
 }
 #copy2 .line3 {
-  font-size: 20px;
-  top: 118px;
+  font-size: 24px;
+  top: 30px;
+  left: 294px;
   color: #fff;
-  left: 8px;
+  letter-spacing: 0;
 }
 #copy2 .line2 {
-  font-size: 35px;
-  top: 82px;
-  left: 37px;
+    font-size: 48px;
+  top: 14px;
+  left: 174px;
+  color: #fff;
 }
 #copy3{
-  font-size: 20px;
-  letter-spacing: -2%;
+  font-size: 24px;
+  letter-spacing: 0;
   line-height: 100%;
-  left: 0px;
-  top: 63px;
+  left: 24px;
+  top: 21px;
   color: #fff;
 }
 #copy3 span{
@@ -162,33 +167,34 @@ video {
 .term{
   font-family: "ESKlarheitGrotesk Smbd";
   color: #fff;
-  font-size: 3.85px;
+  font-size: 3.28px;
   letter-spacing: -2%;
-  top: 414px;
-  left: 121px;
+  top: 75px;
+  left: 592px;
 }
 #leaf{
-  width: 160px;
-  height: 600px;
+  width: 728px;
+  height: 90px;
   top: 2px;
       /* scale: 0.995; */
 }
 #card{
-  width: 128px;
-  left: 16px;
-  top: 330px;
+  width: 101px;
+  /* height: 85.14px; */
+  left: 511px;
+  top: 10px;
 }
 #cta{
   font-family: "ESKlarheitGrotesk Smbd";
   background-color: #00E1FF;
-  font-size: 11.8px;
-  line-height: 37px;
-  color: #000064;
-  border-radius: 4px;
-  width: 131px;
-  height: 34.584px;
-  top: 214.5px;
-  left: 14px;
+  font-size: 11px;
+  line-height: 33px;
+  color: #000095;
+  border-radius: 3px;
+  width: 122px;
+  height: 33px;
+  top: 27px;
+  left: 352px;
   text-align: center;
   display: inline-block;
   will-change: transform;
@@ -197,29 +203,29 @@ video {
 
 .last-frame{
   width: 100%;
-  height: 600px;
+  height: 90px;
   background-color: #000095;
-  transform: translateY(600px);
+  transform: translateY(90px);
   will-change: transform;
 }
 
+
 /* Shine effect */
 #shine {
-  width: 160px;
-  height: 600px;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
+  width: 728px;
+  height: 90px;
   background-image: url(./images/shine.png);
-  background-size: contain;
-  background-position: -144px 0px;
+  background-position: 320px 0px;
   background-repeat: no-repeat;
   position: absolute;
   mix-blend-mode: soft-light;
   -webkit-mask-image: url(./images/mask.png);
-  -webkit-mask-size: 160px 600px;
+  -webkit-mask-size: 728px 90px;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: left;
+  -webkit-mask-position: center;
   mask-image: url(./images/mask.png);
   z-index: 1;
-  mask-size: 160px;
+  mask-size: 728px;
 }
