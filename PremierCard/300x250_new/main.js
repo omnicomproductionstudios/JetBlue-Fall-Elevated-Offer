@@ -23,30 +23,30 @@ function animate() {
     autoAlpha: 0
   });
 
-  tl.set(bg, {
-    x: -30,
-    force3D: true
-  });
+  // tl.set(bg, {
+  //   x: -30,
+  //   force3D: true
+  // });
 
-  tl.set(flare, {
-    force3D: true
-  });
+  // tl.set(flare, {
+  //   force3D: true
+  // });
 
   // Background animation
-  tl.to(bg, {
-    duration: 9,
-    x: 0,
-    ease: "none"
-  }, 0);
+  // tl.to(bg, {
+  //   duration: 9,
+  //   x: 0,
+  //   ease: "none"
+  // }, 0);
 
   // Flare animation
-  tl.to(flare, {
-    duration: 4,
-    scale: 0.9,
-    yoyo: true,
-    repeat: 3,
-    ease: "sine.inOut"
-  }, 0);
+  // tl.to(flare, {
+  //   duration: 4,
+  //   scale: 0.9,
+  //   yoyo: true,
+  //   repeat: 3,
+  //   ease: "sine.inOut"
+  // }, 0);
 
   // Frame 1
   tl.addLabel("frame1", 0)
